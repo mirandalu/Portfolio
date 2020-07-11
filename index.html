@@ -6,59 +6,71 @@
     <title>Miranda Lu Product Designer</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/qyl7pri.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
     <link rel="icon" href="images/ml-favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   </head>
 
     <body>
       <!-- navigation -->
         <nav class="navbar">
-          <div class="logo">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+              <i class="fas fa-bars"></i>
+            </span>
             <a href="index.html"><img id="logo" src="images/homepage/logo.svg" alt="logo"></a>
-          </div>
-            <ul class="nav-links">
+            <ul class="main-nav" id="js-menu">
               <li>
-                <a href="about.html#work">Work</a>
+                <a href="#work-section" class="nav-links">Work</a>
               </li>
               <li>
-                <a href="about.html">About</a>
+                <a href="about.html" class="nav-links">About</a>
               </li>
               <li>
-                <a href="mailto:mirandahylu@gmail.com" target="_blank">Contact</a>
+                <a href="mailto:mirandahylu@gmail.com" class="nav-links" target="_blank">Contact</a>
               </li>
             </ul>
         </nav>
       <!-- hero section -->
-      <section class="hero">
-        <img src="images/homepage/miranda-profile-pic.png" alt="profile image">
-        <h1> Hi there, I'm <strong>Miranda Lu</strong></h1>
-        <h4> a Product Designer passionate about crafting digital interfaces that are meaningful, intuitive, and uplifting.</h4>
-        <div class="downwards-arrow">
-          <a href="#work">
-          </a>
+      <section id="hero">
+        <div class="content-wrap">
+          <div class="profile-image">
+          <img class="fade-in" src="../images/homepage/miranda-profile-pic.png">
+          </div>
+          <div class="hero-heading">
+          <h1>Hi there! I'm <span class="headbold">Miranda</span></h1>
+          </div>
+          <p>a <span style="color:#C8AE8F">Product Designer</span> passionate about crafting elegant designs that connect people through shared experiences and emotional connection.</p>
+          <div class="arrow bounce">
+            <a href="#work-section">
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
         </div>
       </section>
       <!-- work section -->
-      <section class="work-section">
-        <a id="work"></a>
-        <h2>Recent Work</h2>
-        <article class="case-study">
-          <h2>Easebox</h2>
-          <p>A light-weight cloud storage solution for storing, editing and sharing content in a simple, intuitive way.<p>
-            <a href="project.html">View Case Study</a>
-        </article>
+      <section id="work-section" class="grid">
+        <div class="content-wrap">
+          <a id="work"></a>
+          <h2>Recent Work</h2>
+          <article class="case-study">
+            <img src="images/homepage/hero-image.png" alt="easebox display">
+            <h2>Easebox</h2>
+            <p>A light-weight cloud storage solution for storing, editing and sharing content in a simple, intuitive way.<p>
+              <a href="project.html" class="btn">View Case Study</a>
+          </article>
+        </div>
       </section>
       <!-- design process section -->
-      <section class="process">
-          <h2>My Design Process</h2>
-        <article class="process-box">
+      <section id="process" class="grid">
+          <div class="content-wrap">
+            <h2>My Design Process</h2>
             <ul class="process-list">
               <li>
-                <img src="images/homepage/research-icon.svg" alt="icon">
+                <img class="process-icon" src="images/homepage/research-icon.svg" alt="icon">
               </li>
               <li>
-                <h5>Research</h5>
+                <h4>Research</h4>
               </li>
               <li>Design Briefing</li>
               <li>Market Research</li>
@@ -67,10 +79,10 @@
             </ul>
             <ul class="process-list">
               <li>
-                <img src="images/homepage/architect-icon.svg" alt="icon">
+                <img class="process-icon" src="images/homepage/architect-icon.svg" alt="icon">
               </li>
               <li>
-                <h5>Architect</h5>
+                <h4>Architect</h4>
               </li>
               <li>Card Sorting</li>
               <li>User Stories</li>
@@ -79,10 +91,10 @@
             </ul>
             <ul class="process-list">
               <li>
-                <img src="images/homepage/visual-icon.svg" alt="icon">
+                <img class="process-icon" src="images/homepage/visual-icon.svg" alt="icon">
               </li>
               <li>
-                <h5>Visual Design</h5>
+                <h4>Visual Design</h4>
               </li>
               <li>Sketching</li>
               <li>Wireframes</li>
@@ -91,34 +103,34 @@
             </ul>
             <ul class="process-list">
               <li>
-                <img src="images/homepage/validate-icon.svg" alt="icon">
+                <img class="process-icon" src="images/homepage/validate-icon.svg" alt="icon">
               </li>
               <li>
-                <h5>Validate</h5>
+                <h4>Validate</h4>
               </li>
               <li>Interactive Prototypes</li>
               <li>Usability Testing</li>
               <li>Analysis</li>
               <li>Refinement</li>
             </ul>
-        </article>
+        </div>
       </section>
       <!-- testimonial section -->
-      <section class="testimonial-container">
-        <div class="testimonial-box">
-          <p class="testimonial-text">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</p>
-          <h5>Mike Dekker</h5>
+      <section class="testimonial">
+        <div class="testimonial-wrap">
+          <p>"I have had the pleasure to be Miranda's mentor during her time at Thinkful. I have seen her grow into a confident UX/Product designer that is able to design engaging user interfaces and seamless user experiences through a process driven design approach. I would recommend her any day for someone that is looking for a pro active, fast learning designer that can turn an abstract concept into a desirable product."</p>
+          <h6>Mike Dekker</h6>
           <p>UX/UI Design Mentor at BLOC</p>
         </div>
       </section>
       <!-- footer section -->
-      <footer>
-        <div>
-          <h2>Let's Connect</h2>
+      <footer class="main-footer">
+        <div class="footer-box">
+          <h2 class="footer-title">Let's Connect</h2>
           <p>Interested in working together or just chat over a cup of coffee?</p>
         </div>
-        <div>
-          <a href="mailto:mirandahylu@gmail.com" target="_blank">Message Me</a>
+        <div class="footer-box">
+          <a class= "btn-footer" href="mailto:mirandahylu@gmail.com" target="_blank">Message Me</a>
         </div>
         <div class="footer-icons">
           <a href="https://www.linkedin.com/in/mirandahylu" target="_blank">
@@ -131,6 +143,9 @@
             <img src="images/mail.svg" alt="email">
           </a>
         </div>
+        <p class="bottom"> Designed & Developed by Miranda Lu © 2020 </p>
       </footer>
+      <!-- hamburger menu -->
+      <script src="js/script.js"></script>
     </body>
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Miranda Lu Product Designer</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="icon" href="images/ml-favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="index.html"><img id="logo" src="images/homepage/logo.svg" alt="logo"></a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html#work" class="nav-links">Work</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-links">About</a>
+          </li>
+          <li>
+            <a href="mailto:mirandahylu@gmail.com" class="nav-links" target="_blank">Contact</a>
+          </li>
+        </ul>
+    </nav>
+    <!-- about me -->
+    <section class="about">
+    <div class="about-image">
+        <img class="illustration" src="../images/about-me.svg" alt="about-me">
+    </div>
+    <div class="about-me">
+      <h1>About</h1>
+      <p>As a designer, I draw inspiration from sketching, painting, and observing the world around me. I believe that creating art is not only about self-expression but also about connecting with other people.</p>
+      <br>
+      <p>My lifelong desire to create led me to pursue a bachelor's degree in studio art. After graduating from college, I worked in marketing and graphic design at a commercial real estate company, an experience that shaped my perspective on creative problem-solving. I got my first taste of web design while dabbling in newsletter and website editing through a rebranding initiative. During this experience, I explored how people interact with digital product designs and how design can improve our daily lives. My insatiable curiosity motivated me to learn more about functionality, user interaction, and the emotional sphere of human experience. After much deliberation, I decided to pursue a career in UI/UX design, where I could combine my passion for technology, design, and problem-solving into one exciting endeavor.</p>
+      <br>
+      <p>When I’m not designing, you can find me enjoying a good cup of coffee, collecting succulents, and planning my next adventure.
+      I currently live in Houston, TX, and I’m looking for new opportunities to utilize my expertise. I am open to relocating!</p>
+      <br>
+      <p>Let’s connect via email at <span style="color:#C8AE8F">mirandahylu@gmail.com</span></p>
+      <a href="../images/Miranda_Lu_Resume.pdf" class="btn resume">View Resume</a>
+    </div>
+
+    </section>
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/mirandahylu" target="_blank">
+          <img src="images/linkedin.svg" alt="linkedin">
+        </a>
+        <a href="https://github.com/mirandalu" target="_blank">
+          <img src="images/github.svg" alt="github">
+        </a>
+        <a href="mailto:mirandahylu@gmail.com" target="_blank">
+          <img src="images/mail.svg" alt="email">
+        </a>
+      </div>
+      <p class="bottom"> Designed & Developed by Miranda Lu © 2020 </p>
+    </footer>
+    <!-- hamburger menu -->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        navBarToggle.addEventListener('click', function () {
+        mainNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
