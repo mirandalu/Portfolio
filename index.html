@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Miranda Lu Product Designer</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
     <link rel="icon" href="images/ml-favicon.svg">
@@ -21,7 +21,7 @@
             <a href="index.html"><img id="logo" src="images/homepage/logo.svg" alt="logo"></a>
             <ul class="main-nav" id="js-menu">
               <li>
-                <a href="#work-section" class="nav-links">Work</a>
+                <a href="#work-section" class="current">Work</a>
               </li>
               <li>
                 <a href="about.html" class="nav-links">About</a>
@@ -49,22 +49,23 @@
         </div>
       </section>
       <!-- work section -->
-      <section id="work-section" class="grid">
-        <div class="content-wrap">
-          <a id="work"></a>
-          <h2>Recent Work</h2>
-          <article class="case-study">
+      <section id="work-section">
+        <h2>Recent Work</h2>
+        <div class="work">
+          <div class="work-image">
             <img src="images/homepage/hero-image.png" alt="easebox display">
-            <h2>Easebox</h2>
+          </div>
+          <article class="work-content">
+            <h3>Easebox</h3>
             <p>A light-weight cloud storage solution for storing, editing and sharing content in a simple, intuitive way.<p>
-              <a href="project.html" class="btn">View Case Study</a>
+            <a href="project.html" class="btn">View Case Study</a>
           </article>
         </div>
       </section>
       <!-- design process section -->
-      <section id="process" class="grid">
-          <div class="content-wrap">
-            <h2>My Design Process</h2>
+      <section id="process">
+          <h2>My Design Process</h2>
+          <div class="content-wrap grid">
             <ul class="process-list">
               <li>
                 <img class="process-icon" src="images/homepage/research-icon.svg" alt="icon">
@@ -113,16 +114,16 @@
               <li>Analysis</li>
               <li>Refinement</li>
             </ul>
-        </div>
+          </div>
       </section>
       <!-- testimonial section -->
-      <section class="testimonial">
+      <div class="testimonial">
         <div class="testimonial-wrap">
-          <p>"I have had the pleasure to be Miranda's mentor during her time at Thinkful. I have seen her grow into a confident UX/Product designer that is able to design engaging user interfaces and seamless user experiences through a process driven design approach. I would recommend her any day for someone that is looking for a pro active, fast learning designer that can turn an abstract concept into a desirable product."</p>
+          <p class="testimonial-text">"I have had the pleasure to be Miranda's mentor during her time at Thinkful. I have seen her grow into a confident UX/Product designer that is able to design engaging user interfaces and seamless user experiences through a process driven design approach. I would recommend her any day for someone that is looking for a pro active, fast learning designer that can turn an abstract concept into a desirable product."</p>
           <h6>Mike Dekker</h6>
-          <p>UX/UI Design Mentor at BLOC</p>
+          <p id="bloc">UX/UI Design Mentor at BLOC</p>
         </div>
-      </section>
+      </div>
       <!-- footer section -->
       <footer class="main-footer">
         <div class="footer-box">
