@@ -2,6 +2,7 @@
 html {
   font-size: 10px;
   font-family: "Muli", sans-serif;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -13,6 +14,7 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.5rem;
+  margin: 0 auto;
 }
 
 /* buttons */
@@ -87,13 +89,11 @@ body {
 /* headings */
 h1, h2, h3, h4 {
   font-family: 'Josefin Sans', sans-serif;
-  padding-bottom: 2rem;
 }
 
 h5, p {
   font-family: "Muli", sans-serif;
   line-height: 2.4rem;
-  padding-bottom: 1.6rem;
 }
 
 h1 {
@@ -108,6 +108,7 @@ h2 {
   line-height: 3rem;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 1rem;
 }
 
 h3 {
@@ -115,6 +116,7 @@ h3 {
   font-weight: bold;
   line-height: 2.5rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -135,7 +137,6 @@ h6 {
   font-family: "Muli", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  padding-bottom: 1rem;
 }
 
 
@@ -143,11 +144,14 @@ p {
   font-weight: normal;
   font-size: 1.6rem;
   line-height: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 #bloc {
   font-size: 1.2rem;
 }
+
 
 /* a:link{
   color: black;
@@ -165,9 +169,10 @@ img {
 .navbar {
   font-size: 2.4rem;
   background-color: white;
-  padding-bottom: 2rem;
+  margin: auto;
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 .nav-links {
@@ -189,7 +194,8 @@ img {
 
 #logo {
   display: inline-block;
-  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   margin-left: 1.8rem;
   width: 3rem;
 }
@@ -236,7 +242,6 @@ img {
 }
 
 #hero .content-wrap,
-#process .content-wrap,
 .testimonial-wrap,
 .main-footer {
   padding: 5.6rem 2.5rem;
@@ -320,18 +325,18 @@ animation: fadeIn ease 1s;
 }
 
 .process-list {
-  margin-bottom: 5.5rem;
+  margin-bottom: 1rem;
 }
 
 .process-list li{
   font-family: 'Muli', sans-serif;
   font-size: 1.6rem;
   text-decoration: none;
-  margin: 1.6rem auto;
+  line-height: 3rem;
 }
 
 .process-icon {
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 
 /* testimonial */
@@ -378,11 +383,6 @@ animation: fadeIn ease 1s;
 }
 
 
-.container {
-  margin-top: 5rem;
-  width: 100%;
-}
-
 /* images */
 figure img, .google-icon, .dropbox-icon, .pinterest-icon {
   display: block;
@@ -409,13 +409,13 @@ header {
 
 .easebox-hero {
   background-color: #F7F7F7;
-  padding-top: 8.7rem;
-  padding-bottom: 5.5rem;
   width: 100%;
 }
 
 .easebox-hero img {
   display: block;
+  padding-top: 8rem;
+  padding-bottom: 8.5rem;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -460,7 +460,7 @@ header {
   padding: 5.5rem 1.8rem;
 }
 
-.challenge-content {
+.challenge-container {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -476,12 +476,15 @@ header {
   text-transform: uppercase;
 }
 
-.survey-data1{
-  padding: 5.5rem 0 5rem;
+.survey-container1, .survey-container2 {
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
-.survey-data2 h6{
-  padding-bottom: 5rem;
+.survey-wrapper {
+  display: block;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .takeaways {
@@ -505,6 +508,10 @@ header {
   margin-top: 5rem;
 }
 
+section .results {
+  list-style-type: circle;
+}
+
 .bullet-list li {
   position: relative;
   margin-left: 1.8rem;
@@ -512,7 +519,7 @@ header {
   z-index: -1;
 }
 
-ul .plus:before{
+ul .plus:before {
   content: "add_circle";
   color: #27AE60;
   font-family: "Material Icons";
@@ -545,10 +552,10 @@ ul .minus:before {
 
 .persona-one, .persona-two {
   text-align: center;
-  padding: .2rem;
+  margin: 1rem ;
 }
 
-#persona-image {
+.persona-image {
   height: 18rem;
   display: block;
   margin: 3rem auto;
@@ -557,10 +564,7 @@ ul .minus:before {
 
 .persona-list {
   padding-bottom: 2.5rem;
-}
-
-.persona-two {
-  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
 }
 
 /* information architecture */
@@ -578,7 +582,7 @@ ul .minus:before {
 }
 
 /* wireframes */
-.wireframes-content {
+section .content {
   padding-bottom: 2.5rem;
 }
 
@@ -607,9 +611,8 @@ ol {
 }
 
 /* preference testing */
-.preference-wrapper {
+.caption {
   text-align: center;
-  padding: 3rem 0rem;
 }
 
 /* reflection */
@@ -619,13 +622,15 @@ ol {
 
 /***** about me *****/
 .about-image {
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 
 .illustration {
   display: block;
+  height: 28rem;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .about-me {
@@ -641,7 +646,11 @@ ol {
     width: 85%;
   }
 
-  .content-wrap p{
+  .container {
+    margin: auto;
+  }
+
+  .content-wrap p {
     margin-bottom: 15rem;
   }
 
@@ -649,8 +658,6 @@ ol {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    height: 10rem;
-    z-index: 1;
   }
 
   .navbar ul{
@@ -691,36 +698,19 @@ ol {
     display: none;
   }
 
-  h1, h2, h3, h4 {
-    font-family: 'Josefin Sans', sans-serif;
-    padding-bottom: 2rem;
-  }
-
-  h5, p {
-    font-family: "Muli", sans-serif;
-    line-height: 2.4rem;
-    padding-bottom: 1.6rem;
-  }
-
-  h1 {
-    font-size: 4.33rem;
-  }
-
-  h2 {
-    font-size: 3.2rem;
-  }
-
-  h3 {
-    font-size: 2.4rem;
-    text-transform: uppercase;
-  }
-
-
- .work {
+ /*.work {
     align-items: center;
     display: grid;
     grid-template-columns: 6fr 1fr 5fr;
     grid-template-areas:"left . right";
+  }*/
+
+  .work {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    grid-template-areas:"left right";
   }
 
   .work-image {
@@ -752,6 +742,193 @@ ol {
     display: flex;
     padding-right: 10rem;
     padding-left: 10rem;
+  }
+
+/* easebox */
+  .easebox-content {
+    margin: 0 auto;
+    padding-top: 7rem;
+    width: 80%;
+  }
+
+  .challenge p, .user-flows p {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .content {
+    padding-bottom: 2.5rem;
+  }
+
+  .easebox-caption {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .easebox-moodboard {
+    max-width: 90%;
+  }
+
+}
+
+
+/* desktop-laptop */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 2rem;
+  }
+
+  h5, p {
+    font-family: "Muli", sans-serif;
+    line-height: 2.4rem;
+    padding-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 4.33rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+/* homepage */
+  .content-wrap {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  #process, #testimonial {
+    padding: 12rem auto;
+  }
+
+  .testimonial-wrap {
+    margin: 0 auto;
+    max-width: 627px;
+  }
+
+  #work-section h2 {
+    padding-bottom: 5rem;
+  }
+
+  .work {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-gap: 6rem;
+    margin: 0 auto;
+
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-rows: auto;
+    width: 100%;
+  }
+
+/* easebox */
+  .description {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .overview-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 90rem;
+  }
+
+  .list {
+    margin: 5rem auto;
+    width: 40%;
+  }
+
+  .content, .challenge-container, .solution, .takeaways, .reflection-content,
+  .survey-container {
+    width: 45%;
+    margin: 0 auto;
+}
+
+  .survey-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 65%;
+  }
+
+  .analysis-container {
+    column-gap: 8rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .persona-container {
+    column-gap: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .persona-list h6 {
+    margin-top: 2.5rem;
+  }
+
+  .preference-container, .testing-container {
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .preference-wrapper, .testing-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+/* about me */
+  .about {
+    align-items: center;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+  }
+
+  .about-me{
+    padding-top: 20rem;
+  }
+
+  .about-me h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .illustration {
+    display: block;
+    height: 35rem;
+    margin-left: auto;
+    width: 100%;
   }
 
 }

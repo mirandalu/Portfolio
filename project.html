@@ -23,7 +23,7 @@
         <a href="index.html"><img id="logo" src="images/homepage/logo.svg" alt="logo"></a>
         <ul class="main-nav" id="js-menu">
           <li>
-            <a href="about.html#work-section" class="nav-links">Work</a>
+            <a href="about.html#work-section" class="current">Work</a>
           </li>
           <li>
             <a href="about.html" class="nav-links">About</a>
@@ -33,20 +33,23 @@
           </li>
         </ul>
     </nav>
-    <main>
-      <!-- header section -->
-      <header>
-        <div class="easebox-hero">
-          <img class="easebox-image" src="images/easebox/hero-image.png" alt="easebox image">
-        </div>
-        <div class="easebox-content">
-          <h1>Easebox</h1>
-          <p>A light-weight cloud storage solution for storing, editing and sharing content in a simple, intuitive way.</p>
-          <a href="https://www.figma.com/proto/6R0gXQkDU1Z13iNvJuFrzw/Easebox?node-id=101%3A0&viewport=956%2C345%2C0.1550595909357071&scaling=min-zoom" class="btn">View Prototype</a>
+
+    <!-- header section -->
+    <header>
+      <div class="easebox-hero">
+        <img class="easebox-image" src="images/easebox/hero-image.png" alt="easebox image">
       </div>
-      </header>
+      <div class="easebox-content">
+        <h1>Easebox</h1>
+        <p>A light-weight cloud storage solution for storing, editing and sharing content in a simple, intuitive way.</p>
+        <a href="https://www.figma.com/proto/6R0gXQkDU1Z13iNvJuFrzw/Easebox?node-id=101%3A0&viewport=956%2C345%2C0.1550595909357071&scaling=min-zoom" class="btn">View Prototype</a>
+    </div>
+    </header>
+
+    <main>
       <!-- overview section -->
       <section class="overview">
+        <div class="overview-content">
           <ul class="list">
             <li><h3>Role</h3></li>
             <li>UX Research</li>
@@ -70,11 +73,12 @@
             <li>Balsamiq</li>
             <li>UsabilityHub</li>
           </ul>
+        </div>
       </section>
 
       <!-- the challenge | solution -->
-      <section class="challenge">
-        <div class="challenge-content">
+      <article class="challenge description">
+        <div class="challenge-container">
           <h2>The Challenge</h2>
           <p>The current cloud storage marketplace is packed with a wide variety of applications. However, users have encountered various challenges with the cloud storage services such as cluttered design, complex interface, and storage limitations.</p>
         </div>
@@ -82,105 +86,118 @@
           <h2>Solution</h2>
           <p>Easebox is the solution that places an emphasis on simple organization and collaboration. Users are given the tools to create and share files as well as access everything across all devices, making their workflow more streamlined and efficient.</p>
         </div>
-      </section>
+      </article>
 
       <!-- user research -->
       <section class="research">
-        <p class="section-heading">Discovery Phase</p>
-        <h2>User Research</h2>
-        <p>I began my research by creating a user survey and distributed it to multiple social media platforms. I wanted to gain a better understanding of how potential users were using cloud storage services, as well as what they did and did not like about using these services.</p>
-        <div class="survey-data1">
-          <h6>What is your main reason for using Cloud Storage?</h6>
-            <figure>
+        <div class="content">
+          <p class="section-heading">Discovery Phase</p>
+          <h2>User Research</h2>
+          <p>I began my research by creating a user survey and distributed it to multiple social media platforms. I wanted to gain a better understanding of how potential users were using cloud storage services, as well as what they did and did not like about using these services.</p>
+        </div>
+        <div class="survey-container">
+          <div class="survey-container1">
+            <figure class="survey-wrapper">
+              <h6>What is your main reason for using Cloud Storage?</h6>
+            </figure>
+            <figure class="survey-image">
               <img src="images/easebox/survey-chart1.svg" alt="pie chart">
             </figure>
-        </div>
-        <div class="survey-data2">
-          <h6>Which cloud storage services do you use?</h6>
-            <figure>
+          </div>
+          <div class="survey-container2">
+            <figure class="survey-wrapper">
+              <h6>Which cloud storage services do you use?</h6>
+            </figure>
+            <figure class="survey-image">
               <img src="images/easebox/survey-chart2.svg" alt="bar graph">
             </figure>
           </div>
-          <div class="takeaways">
-            <h6>Key Takeaways:</h6>
-            <ul>
-              <li><span class="headbold">80%</span> of participants typically store, create, edit and collaborate on files</li>
-              <li><span class="headbold">68%</span> of participants favor automatic file synchronization</li>
-              <li><span class="headbold">65%</span> of participants find it helpful for cloud storage services to be accessible across devices</li>
-              <li>Participants would like to see an improvement on the ease of use of cloud storage services</li>
-              <li>Participants were most frustrated with price and storage space limitations</li>
-            </ul>
-          </div>
+        </div>
+        <div class="takeaways">
+          <h6>Key Takeaways:</h6>
+          <ul>
+            <li><span class="headbold">80%</span> of participants typically store, create, edit and collaborate on files</li>
+            <li><span class="headbold">68%</span> of participants favor automatic file synchronization</li>              <li><span class="headbold">65%</span> of participants find it helpful for cloud storage services to be accessible across devices</li>
+            <li>Participants would like to see an improvement on the ease of use of cloud storage services</li>
+            <li>Participants were most frustrated with price and storage space limitations</li>
+          </ul>
+        </div>
       </section>
 
       <!-- competitive analysis -->
-      <section class="analysis">
-        <h2>Competitive Analysis</h2>
-        <p>Following the survey results, I took a close look at three market competitors that catered to specific interests: Google Drive, DropBox, and Pinterest. I studied each competitor’s positioning, primary audience, and key differentiators through a SWOT analysis. In analyzing the results from my survey and market competitors, I was able to determine the opportunities for Easebox:</p>
-        <ul>
-            <li>Multi-device accessibility</li>
-            <li>Easy uploading and sharing process</li>
-            <li>Simple collaboration tools</li>
-            <li>Generous storage space at lower pricing tiers</li>
-        </ul>
-        <div>
-          <div class="analysis-wrapper">
-            <img class="google-icon" src="images/easebox/google.svg" alt="Google Drive Logo">
-          </div>
-          <div>
-            <h3>Google Drive</h3>
-          </div>
-          <div>
-            <ul class="bullet-list">
-              <li class="plus">Large amount of free storage</li>
-              <li class="plus">Can upload any type of file</li>
-              <li class="minus">Unoptimized organization</li>
-              <li class="minus">Requires users to have a gmail account</li>
-            </ul>
-          </div>
+      <section class="analysis description">
+        <div class="content">
+          <h2>Competitive Analysis</h2>
+          <p>Following the survey results, I took a close look at three market competitors that catered to specific interests: Google Drive, DropBox, and Pinterest. I studied each competitor’s positioning, primary audience, and key differentiators through a SWOT analysis. In analyzing the results from my survey and market competitors, I was able to determine the opportunities for Easebox:</p>
+          <ul class="results">
+              <li>Multi-device accessibility</li>
+              <li>Easy uploading and sharing process</li>
+              <li>Simple collaboration tools</li>
+              <li>Generous storage space at lower pricing tiers</li>
+          </ul>
         </div>
-        <div>
-          <div class="analysis-wrapper">
-            <img class="dropbox-icon" src="images/easebox/dropbox.svg" alt="Dropbox Logo">
-          </div>
-          <div>
-            <h3>Dropbox</h3>
-          </div>
-          <div>
-            <ul class="bullet-list">
-              <li class="plus">Intuitive navigation</li>
-              <li class="plus">Available on multiple platforms</li>
-              <li class="minus">Security of users data</li>
-              <li class="minus">Small amount of free storage</li>
-              <li class="minus">Can become expensive</li>
-            </ul>
-          </div>
-        </div>
-        <div>
+        <div class="analysis-container">
+          <div class="competitors">
             <div class="analysis-wrapper">
-              <img class="pinterest-icon" src="images/easebox/pinterest.svg" alt="Pinterest Logo">
+              <img class="google-icon" src="images/easebox/google.svg" alt="Google Drive Logo">
             </div>
             <div>
-              <h3>Pinterest</h3>
+              <h3>Google Drive</h3>
             </div>
-            <div>
-              <ul class="bullet-list">
-                <li class="plus">Free and easy to use</li>
-                <li class="plus">Visually focused interface</li>
-                <li class="minus">Content limited to images, videos, and gifs</li>
-                <li class="minus">Lacks collaboration tools</li>
+            <div class="bullet-list">
+              <ul>
+                <li class="plus">Large amount of free storage</li>
+                <li class="plus">Can upload any type of file</li>
+                <li class="minus">Unoptimized organization</li>
+                <li class="minus">Requires users to have a gmail account</li>
               </ul>
             </div>
+          </div>
+          <div class="competitors">
+            <div class="analysis-wrapper">
+              <img class="dropbox-icon" src="images/easebox/dropbox.svg" alt="Dropbox Logo">
+            </div>
+            <div>
+              <h3>Dropbox</h3>
+            </div>
+            <div class="bullet-list">
+              <ul>
+                <li class="plus">Intuitive navigation</li>
+                <li class="plus">Available on multiple platforms</li>
+                <li class="minus">Security of users data</li>
+                <li class="minus">Small amount of free storage</li>
+                <li class="minus">Can become expensive</li>
+              </ul>
+            </div>
+          </div>
+          <div class="competitors">
+              <div class="analysis-wrapper">
+                <img class="pinterest-icon" src="images/easebox/pinterest.svg" alt="Pinterest Logo">
+              </div>
+              <div>
+                <h3>Pinterest</h3>
+              </div>
+              <div class="bullet-list">
+                <ul>
+                  <li class="plus">Free and easy to use</li>
+                  <li class="plus">Visually focused interface</li>
+                  <li class="minus">Content limited to images, videos, and gifs</li>
+                  <li class="minus">Lacks collaboration tools</li>
+                </ul>
+              </div>
+          </div>
         </div>
       </section>
 
       <!-- user personas -->
-      <section class="personas">
-        <h2>User Personas</h2>
-        <p>With the research and data gathered, I developed two user personas to grasp our potential users.</p>
+      <section class="personas description">
+        <div class="content">
+          <h2>User Personas</h2>
+          <p>With the research and data gathered, I developed two user personas to grasp our potential users.</p>
+        </div>
         <div class="persona-container">
           <div class="persona-one">
-            <img id="persona-image" src="images/easebox/persona1.svg" alt="persona">
+            <img class="persona-image" src="images/easebox/persona1.svg" alt="persona">
             <h5>Emily</h5>
             <p>Age: 31 | Finance Associate | New York, NY</p>
           </div>
@@ -191,44 +208,42 @@
               <li>To ensure her files are synced automatically</li>
               <li>To be able to collaborate in real-time with her teams</li>
             </ul>
-          </div>
-          <div class="persona-list">
             <h6>Frustrations</h6>
             <ul>
               <li>Difficulty keeping track of files</li>
               <li>Documents are only accessible on work laptop</li>
               <li>Security of files</li>
             </ul>
-            </div>
+          </div>
           <div class="persona-two">
-            <img id="persona-image" src="images/easebox/persona2.svg" alt="persona">
+            <img class="persona-image" src="images/easebox/persona2.svg" alt="persona">
             <h5>Henry</h5>
             <p>Age: 27 | Student | San Francisco, CA</p>
           </div>
           <div class="persona-list">
-            <h6>Goals</h6>
-            <ul>
-              <li>To keep all his projects centralized</li>
-              <li>To have an easy access to all files</li>
-              <li>To share his photo libraries with family and friends</li>
-            </ul>
-            </div>
-            <div class="persona-list">
+              <h6>Goals</h6>
+              <ul>
+                <li>To keep all his projects centralized</li>
+                <li>To have an easy access to all files</li>
+                <li>To share his photo libraries with family and friends</li>
+              </ul>
               <h6>Frustrations</h6>
               <ul>
                 <li>Need one place to take notes and share them</li>
                 <li>Tedious to transfer documents from one device to another</li>
                 <li>Not enough storage space for his expanding photo collections</li>
               </ul>
-            </div>
+          </div>
         </div>
       </section>
 
       <!-- user stories and flows -->
-      <section class="user-flows">
+      <article class="user-flows description">
+        <div class="content">
           <p class="section-heading">Information Architecture</p>
           <h2>User Stories and Flows</h2>
           <p>Next, I created user stories to highlight the main features for my MVP (minimum viable product). Subsequently these user stories were converted into user flows to demonstrate how users would accomplish those stories with the product.</p>
+        </div>
         <figure>
           <img class="uf-image1" src="images/easebox/user-flow1.svg" alt="sign up flow">
         </figure>
@@ -238,11 +253,11 @@
         <div class="uf-link">
           <a class="link" href="https://drive.google.com/file/d/12bA1Wt5AmZf38EJ47aI0PRnBvr2UUu8H/view?usp=sharing">View All User Flows</a>
         </div>
-      </section>
+      </article>
 
       <!-- sketches and wireframes -->
-      <section class="wireframes">
-        <div class="wireframes-content">
+      <section class="wireframes description">
+        <div class="content">
           <h2>Sketches & Wireframes</h2>
           <p>I started sketching out several different low-fidelity wireframes on paper to explore concepts, and then transferred them into digital wireframes to create a clickable prototype for usability testing.</p>
         </div>
@@ -255,8 +270,8 @@
       </section>
 
       <!-- usability test -->
-      <section class="usability-tests">
-        <div class="wireframes-content">
+      <section class="usability-tests description">
+        <div class="content">
           <h2>Usability Tests</h2>
           <p>With the digital wireframes completed, I was able to conduct both remote and in-person user testing. To validate general user flows, I asked participants to complete the following tasks:</p>
           <ol>
@@ -264,9 +279,7 @@
             <li>2. Create a new content</li>
             <li>3. Move a content into a folder</li>
           </ol>
-          <br>
           <p>While the participants were able to complete most tasks successfully, I learned through observations that various elements needed to be addressed on the dashboard.</p>
-        </div>
           <h6>Here were my top findings:</h6>
           <ul>
             <li>Buttons placement was a concern for action clarity and accessibility</li>
@@ -275,11 +288,12 @@
             <li>Users suggested adding a dark overlay to selected items</li>
             <li>Users assumed a “drag and drop” option for adding a file into a folder</li>
           </ul>
+        </div>
       </section>
 
       <!-- branding -->
-      <section class="branding">
-        <div>
+      <section class="branding description">
+        <div class="content">
           <p class="section-heading">Branding Identity</p>
           <h2>Branding Design</h2>
           <p>My next step in the process was to establish the visual aspect of the brand: logo, typography, and color scheme. I started with a mind mapping exercise to capture the brand value and gather ideas through word association.  The entire brand was built with simplicity and the ease of service in mind.  Hence the name Easebox suited the product.</p>
@@ -297,8 +311,8 @@
       </section>
 
       <!-- high-fidelity mockups -->
-      <section class="mockups">
-        <div>
+      <section class="mockups description">
+        <div class="content">
           <p class="section-heading">Visual Design</p>
           <h2>High-Fidelity Mockups</h2>
           <p>After taking into account the feedback from the usability test, I incorporated the style guide to create high fidelity mockups with Figma.</p>
@@ -309,51 +323,67 @@
       </section>
 
       <!-- preference testing -->
-      <section class="preference">
-        <div>
+      <section class="preference description">
+        <div class="content">
           <h2>Preference Testing</h2>
           <p>Preference tests were conducted to obtain user feedback on different visual elements and to improve on previously designed features.</p>
         </div>
-        <figure>
-          <img class="preference-image" src="images/easebox/dashboard-1.svg" alt="dashboard">
-        </figure>
-        <figure>
-          <img class="preference-image" src="images/easebox/dashboard-2.svg" alt="dashboard">
-        </figure>
-        <p class="preference-wrapper">Users preferred option B with a dark blue color navigation bar for better contrast and visibility</p>
-        <figure>
-          <img class="preference-image" src="images/easebox/landing-page1.svg" alt="landing page">
-        </figure>
-        <figure>
-          <img class="preference-image" src="images/easebox/landing-page2.svg" alt="landing page">
-        </figure>
-        <p class="preference-wrapper">Users preferred option B with transparent background for the navigation bar</p>
+        <div class="preference-container">
+          <div class="preference-wrapper">
+            <figure>
+              <img class="preference-image" src="images/easebox/dashboard-1.svg" alt="dashboard">
+            </figure>
+            <figure>
+              <img class="preference-image" src="images/easebox/dashboard-2.svg" alt="dashboard">
+            </figure>
+          </div>
+          <p class="caption">Users preferred option B with a dark blue color navigation bar for better contrast and visibility</p>
+          <div class="preference-wrapper">
+            <figure>
+              <img class="preference-image" src="images/easebox/landing-page1.svg" alt="landing page">
+            </figure>
+            <figure>
+              <img class="preference-image" src="images/easebox/landing-page2.svg" alt="landing page">
+            </figure>
+          </div>
+          <p class="caption">Users preferred option B with transparent background for the navigation bar</p>
+        </div>
       </section>
 
       <!-- usability testing and validation -->
-      <section class="testings-validation">
-        <h2 class="testing-heading">Usability Testing & Validation</h2>
-        <p>After implementing the changes from my preference tests,  I conducted a second round of usability tests focused on navigation and interactions. Some significant changes were made based on the feedbacks collected from the participants and senior designers:</p>
-        <figure>
-          <img class="td-image" src="images/easebox/dashboard-iteration1.svg" alt="dashboard">
-        </figure>
-        <figure>
-          <img class="td-image" src="images/easebox/dashboard-iteration2.svg" alt="dashboard">
-        </figure>
-        <figure>
-          <img class="td-image" src="images/easebox/account-iteration1.svg" alt="signup page">
-        </figure>
-        <figure>
-          <img class="td-image" src="images/easebox/account-iteration2.svg" alt="signup page">
-        </figure>
-        <figure>
-          <img class="td-image" src="images/easebox/settings-iteration.svg" alt="settings">
-          <figcaption class="figcaption">Refined account page to give more breathing space and better hierarchy</figcaption>
-        </figure>
+      <section class="testings-validation description">
+        <div class="content">
+          <h2 class="testing-heading">Usability Testing & Validation</h2>
+          <p>After implementing the changes from my preference tests,  I conducted a second round of usability tests focused on navigation and interactions. Some significant changes were made based on the feedbacks collected from the participants and senior designers:</p>
+        </div>
+        <div class="testing-container">
+          <div class="testing-wrapper">
+            <figure>
+              <img class="td-image" src="images/easebox/dashboard-iteration1.svg" alt="dashboard">
+            </figure>
+            <figure>
+              <img class="td-image" src="images/easebox/dashboard-iteration2.svg" alt="dashboard">
+            </figure>
+          </div>
+          <div class="testing-wrapper">
+            <figure>
+              <img class="td-image" src="images/easebox/account-iteration1.svg" alt="signup page">
+            </figure>
+            <figure>
+              <img class="td-image" src="images/easebox/account-iteration2.svg" alt="signup page">
+            </figure>
+          </div>
+          <div class="testing-wrapper3">  
+            <figure>
+              <img class="td-image" src="images/easebox/settings-iteration.svg" alt="settings">
+              <figcaption class="figcaption">Refined account page to give more breathing space and better hierarchy</figcaption>
+            </figure>
+          </div>
+        </div>
       </section>
 
       <!-- reflection -->
-      <section class="reflection">
+      <section class="reflection description">
         <div>
           <img class="final-mockup" src="images/easebox/flat-layout.svg" alt="final mockup">
         </div>
