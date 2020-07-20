@@ -247,33 +247,29 @@ img {
   padding: 5.6rem 2.5rem;
 }
 
+/* arrow bounce */
+
+body { background: @bg;}
+a { color: black; text-decoration: none; }
+
 .arrow {
-  border-radius: .5rem;
   text-align: center;
-  margin-top: 4rem;
+  margin: 8% 0;
 }
-
-.arrow i{
-  color: black;
-}
-
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
 
-@-moz-keyframes bounce {
+@keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
     transform: translateY(0);
   }
   40% {
-    -moz-transform: translateY(-20px);
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   60% {
-    -moz-transform: translateY(-15px);
     transform: translateY(-15px);
   }
 }
