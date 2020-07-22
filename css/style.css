@@ -814,7 +814,11 @@ ol {
     width: 50%;
   }
 
-  #hero .content-wrap, .process-wrap
+  #hero .content-wrap {
+    padding: 12rem 2.5rem 0rem;
+  }
+
+  .process-wrap
   .testimonial-wrap,
   .main-footer {
     padding: 12rem 2.5rem;
