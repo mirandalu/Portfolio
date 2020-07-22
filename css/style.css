@@ -234,10 +234,9 @@ img {
   margin-right: auto;
   max-width: 15.8rem;
   width: 100%;
-
 }
 
-.headbold {
+#hero h1, .headbold {
   font-weight: bold;
 }
 
@@ -245,6 +244,10 @@ img {
 .testimonial-wrap,
 .main-footer {
   padding: 5.6rem 2.5rem;
+}
+
+.highlight {
+  background-color: #EBE1D5;
 }
 
 /* arrow bounce */
@@ -295,11 +298,11 @@ animation: fadeIn ease 1s;
 
 
 /* recent work */
-#work-section {
+.work-section {
   text-align: center;
 }
 
-#work-section .work {
+.work-section .work {
   background-color: #F7F7F7;
   padding: 5rem 4rem;
 }
@@ -315,7 +318,7 @@ animation: fadeIn ease 1s;
 
 
 /* design process */
-#process{
+.process{
   text-align: center;
   margin: 5.5rem auto;
 }
@@ -656,6 +659,11 @@ ol {
     justify-content: space-between;
   }
 
+  .process, .testimonial {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
   .navbar ul{
     font-family: "Josefin Sans",sans-serif;
     font-size: 1.6rem;
@@ -806,8 +814,10 @@ ol {
     width: 50%;
   }
 
-  #process, #testimonial {
-    padding: 12rem auto;
+  #hero .content-wrap, .process-wrap
+  .testimonial-wrap,
+  .main-footer {
+    padding: 12rem 2.5rem;
   }
 
   .testimonial-wrap {
@@ -815,7 +825,7 @@ ol {
     max-width: 627px;
   }
 
-  #work-section h2 {
+  .work-section h2 {
     padding-bottom: 5rem;
   }
 
