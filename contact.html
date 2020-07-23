@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Miranda Lu Product Designer</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="icon" href="images/ml-favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+    <body>
+      <!-- navigation -->
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+              <i class="fas fa-bars"></i>
+            </span>
+            <a href="index.html"><img id="logo" src="images/homepage/logo.svg" alt="logo"></a>
+            <ul class="main-nav" id="js-menu">
+              <li>
+                <a href="index.html" class="nav-links">Work</a>
+              </li>
+              <li>
+                <a href="about.html" class="nav-links">About</a>
+              </li>
+              <li>
+                <a href="contact.html" class="current">Contact</a>
+              </li>
+            </ul>
+        </nav>
+
+      <!-- form -->
+      <section class="form">
+        <div class="form-wrapper">
+          <h1>Drop me a line!</h1>
+        </div>
+        <form action="https://formspree.io/mjvajydo" method="POST">
+          <label for="name">Name</label>
+             <input type="text" name="name">
+           <label for="name">Email</label>
+             <input type="text" name="email">
+           <label for="name">Message</label>
+             <textarea name="message" id=border></textarea>
+             <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+
+      <!-- footer section -->
+      <footer class="main-footer">
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/miranda-lu-3040661aa/" target="_blank">
+            <img src="images/linkedin.svg" alt="linkedin">
+          </a>
+          <a href="https://github.com/mirandalu" target="_blank">
+            <img src="images/github.svg" alt="github">
+          </a>
+          <a href="contact.html" target="_blank">
+            <img src="images/mail.svg" alt="email">
+          </a>
+        </div>
+        <p class="bottom"> Designed & Developed by Miranda Lu © 2020 </p>
+      </footer>
+
+      <!-- hamburger menu -->
+      <script>
+          let mainNav = document.getElementById('js-menu');
+          let navBarToggle = document.getElementById('js-navbar-toggle');
+          navBarToggle.addEventListener('click', function () {
+          mainNav.classList.toggle('active');
+          });
+      </script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173157135-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173157135-1');
+      </script>
+      </body>
+</html>
